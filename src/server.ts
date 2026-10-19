@@ -23,7 +23,7 @@ export function createPinterestServer() {
     server.registerTool(name,{
       title,description,inputSchema:schema,annotations:{readOnlyHint:true,destructiveHint:false,openWorldHint:false},
       ...(withGallery?{_meta:{ui:{resourceUri:galleryUri}}}:{})
-    },async(args)=>{try{return success(await fn(args))}catch(e){return failure(e)}});
+    },async(args:any)=>{try{return success(await fn(args))}catch(e){return failure(e)}});
   }
   const page={page_size:z.number().int().min(1).max(250).default(50),bookmark:z.string().optional()};
   const id=z.string().regex(/^\d+$/);
