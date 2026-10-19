@@ -11,7 +11,7 @@ window.addEventListener('message',event=>{const m=event.data;if(m?.method==='ui/
 </script></body></html>`;
 
 export function createPinterestServer() {
-  const server = new McpServer({name:'pinterest-research',version:'0.2.0'},{
+  const server = new McpServer({name:'pinterest-research',version:'0.3.0'},{
     instructions:'Read-only Pinterest research. Use pinterest_boards to discover a board ID, pinterest_board_pins to inspect its actual images and metadata. Always cite pin_url as the source; never claim to see or analyze image pixels unless the client has actually viewed them. Use bookmark to fetch more.'
   });
   server.registerResource('pinterest-gallery',galleryUri,{description:'Pinterest gallery for pin results',mimeType:'text/html;profile=mcp-app'},async()=>({
@@ -22,6 +22,7 @@ export function createPinterestServer() {
   function reg(name:string,title:string,description:string,schema:any,fn:(a:any)=>Promise<unknown>,withGallery=false){
     server.registerTool(name,{
       title,description,inputSchema:schema,annotations:{readOnlyHint:true,destructiveHint:false,openWorldHint:false},
+      securitySchemes:[{type:'oauth2',scopes:['pinterest.read']}],
       ...(withGallery?{_meta:{ui:{resourceUri:galleryUri}}}:{})
     },async(args:any)=>{try{return success(await fn(args))}catch(e){return failure(e)}});
   }
