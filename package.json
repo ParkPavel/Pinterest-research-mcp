@@ -1,12 +1,14 @@
 {
   "name": "pinterest-research-mcp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "tsx src/index.ts",
+    "dev:http": "tsx src/http.ts",
     "build": "tsc",
     "start": "node dist/index.js",
+    "start:http": "node dist/http.js",
     "auth": "tsx src/auth.ts",
     "check": "tsc --noEmit"
   },
