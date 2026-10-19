@@ -1,0 +1,19 @@
+name: Feature request
+description: Suggest a research or MCP capability
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: usecase
+    attributes:
+      label: Research use case
+      description: What workflow are you trying to enable?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Include expected API permissions, source attribution and privacy impact.
+    validations:
+      required: true
