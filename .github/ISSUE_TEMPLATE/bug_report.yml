@@ -1,0 +1,34 @@
+name: Bug report
+description: Report reproducible behavior (do not include tokens or private Pinterest data)
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Please remove secrets, private board identifiers, and personal data from any logs."
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the observed and expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Include local setup and commands, but no credentials.
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Local stdio
+        - HTTP MCP prototype
+        - CI / build
+        - Documentation
+        - Other
+    validations:
+      required: true
