@@ -35,3 +35,12 @@ Guides:
 - https://developers.openai.com/plugins/build/mcp-server
 - https://developers.openai.com/plugins/build/chatgpt-ui
 - https://developers.openai.com/plugins/deploy/connect-chatgpt
+
+## OAuth gateway groundwork (v0.3)
+When `OAUTH_ISSUER`, `MCP_PUBLIC_URL`, and `OAUTH_AUDIENCE` are set, `/mcp` verifies bearer JWTs against `<issuer>/.well-known/jwks.json`, checking issuer, audience, signature and `pinterest.read` scope. `/.well-known/oauth-protected-resource` publishes the protected-resource discovery document. The external OAuth provider must implement Authorization Code + PKCE, client registration/recognition, and authorization server metadata. This repository does **not** itself issue OAuth tokens or connect Pinterest identities to ChatGPT user identities. Its single-account Pinterest token store is **not safe for multitenant deployments**. Run behind an HTTPS reverse proxy with correct public URL. Local static-token testing is restricted to loopback hosts.
+
+### Remaining blockers for end-to-end ChatGPT connection
+1. Configure an external standards-compliant OAuth authorization server and ChatGPT redirect URI.
+2. Implement per-user token storage instead of the shared local Pinterest credentials.
+3. Deploy HTTPS backend and run MCP Inspector then real ChatGPT authorization.
+4. Confirm production Pinterest app approval and supported OAuth callback URL.
