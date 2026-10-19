@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Privacy Policy for the experimental Pinterest Research MCP connector."><title>Privacy Policy — Pinterest Research MCP</title><link rel="stylesheet" href="./style.css"><script type="module" src="./site.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><div class="page"><header class="header"><a class="brand" href="./">Pinterest Research MCP</a><nav aria-label="Navigation"><a href="./">Главная</a><a href="https://github.com/ParkPavel/Pinterest-research-mcp/blob/main/PRIVACY.md">Source on GitHub</a></nav></header><main id="main" class="policy"><p class="eyebrow">Project documentation / Privacy</p><h1>Privacy Policy</h1><p class="intro" lang="ru">Официальная политика проекта приведена на английском языке из PRIVACY.md. <a href="./">Вернуться на главную</a>.</p><div class="policy-content" id="policy-content"><p><strong>Effective date:</strong> October 19, 2026</p>
+<p><strong>Operator:</strong> Park Pavel (independent developer) <strong>Project:</strong> <a href="https://github.com/ParkPavel/Pinterest-research-mcp">Pinterest Research MCP</a> <strong>Contact:</strong> <a href="https://github.com/ParkPavel/Pinterest-research-mcp/issues">Project issue tracker</a>. Please do not post private information, tokens, or account details in public issues; request a private contact channel first.</p>
+<h2>1. What the application does</h2>
+<p>Pinterest Research MCP is an experimental, read-only tool for authorized Pinterest account research and visual analysis through compatible AI assistants. It may retrieve information about the connected account and accessible boards, board sections, Pins, descriptions, source links, and media URLs within Pinterest API permissions.</p>
+<p><strong>Current status:</strong> The software is in development. Its local prototype is not yet a publicly hosted multi-user service. Capabilities below describe intended processing when an account is connected and the tool is used.</p>
+<h2>2. Information processed</h2>
+<p>When you explicitly authorize the app, it may process:</p>
+<ul>
+<li>Your Pinterest account identifier and basic account information available under granted permissions.</li>
+<li>IDs, titles, descriptions, metadata, and media URLs of boards, sections, and Pins available to the authorized user.</li>
+<li>OAuth access and refresh tokens needed to make API requests.</li>
+<li>Minimal operational information required for security and troubleshooting if the service is deployed.</li>
+</ul>
+<p>The app does not ask for your Pinterest password. It does not request access to private data beyond granted Pinterest scopes.</p>
+<h2>3. Why the information is used</h2>
+<p>Data is used to fulfill your requested Pinterest research queries, display collections and references, troubleshoot authorization, and protect the service from unauthorized access. The project does not use personal data for advertising or sell personal data.</p>
+<h2>4. Processing by other services</h2>
+<p>Pinterest provides data through its official API. When you choose to use an AI assistant such as ChatGPT, retrieved content may be sent to that assistant for analysis and handled according to the assistant provider&#39;s terms and privacy notice. GitHub hosts the publicly visible project source code and this policy; personal Pinterest data and OAuth tokens must not be stored in the public repository.</p>
+<h2>5. Storage and security</h2>
+<p>The current single-user implementation stores Pinterest OAuth tokens in a local AES-256-GCM-encrypted file, with the encryption key configured separately. The current prototype does not maintain a cloud user-data database. If a hosted service is introduced, this policy will be revised before public use to describe actual hosting, access controls, storage locations, retention periods, and any subprocessors. No security measure eliminates all risk.</p>
+<h2>6. Retention and deletion</h2>
+<p>In the local prototype, data returned from Pinterest is processed for the active request and is not intentionally retained in a long-lived application content database. Locally encrypted OAuth tokens remain until deleted or replaced by the operator. Removing the local <code>.data/tokens.enc</code> file deletes that local token copy. Separately, revoke the application&#39;s access in Pinterest account settings to invalidate permission. Data already passed to external AI clients is governed by their own retention and deletion controls.</p>
+<h2>7. Your choices</h2>
+<p>You control authorization and may revoke Pinterest access at any time. You may request information about project data handling through the project issue tracker without posting personal information publicly.</p>
+<h2>8. Changes</h2>
+<p>This policy will be updated when the software moves beyond its current local single-user prototype, especially before multi-user hosting or any new persistent storage, and the effective date will be changed.</p>
+<h2>9. Independent app notice</h2>
+<p>Pinterest Research MCP is an independent developer project and is not affiliated with or endorsed by Pinterest.</p>
+</div><p class="source-note" id="freshness" aria-live="polite">Repository snapshot: 2026-10-19. Checking for updates…</p></main><footer><a href="./">Pinterest Research MCP</a><a href="https://github.com/ParkPavel/Pinterest-research-mcp/blob/main/PRIVACY.md">PRIVACY.md</a><a href="https://web.tribute.tg/d/SwM">Support on Tribute</a></footer></div></body></html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pinterest Research MCP — экспериментальный локальный MCP-коннектор для чтения авторизованных досок, пинов и ссылок на источники Pinterest.">
+  <meta name="color-scheme" content="light">
+  <title>Pinterest Research MCP — исследования с опорой на источники</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./site.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Перейти к содержимому</a>
+  <div class="page">
+    <header class="header">
+      <a class="brand" href="./">Pinterest Research MCP</a>
+      <nav aria-label="Основная навигация">
+        <a href="#features">Функции</a><a href="#development">Разработка</a><a href="#documentation">Документация</a><a href="https://github.com/ParkPavel/Pinterest-research-mcp">GitHub</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="title">
+        <div class="hero-main">
+          <p class="eyebrow">Pinterest Research MCP / Experimental</p>
+          <h1 id="title">Визуальные<br>исследования.<br>С опорой на источники.</h1>
+          <p class="hero-note">Локальный MVP. Интеграция ChatGPT в разработке.</p>
+        </div>
+        <div class="hero-side">
+          <p>Локальный MCP-коннектор для чтения авторизованных досок и пинов Pinterest.</p>
+          <p>Возвращает метаданные, медиа-ссылки и оригинальные ссылки на пины.</p>
+          <a class="button" href="https://github.com/ParkPavel/Pinterest-research-mcp">Открыть GitHub</a>
+          <a class="text-link" href="#documentation">Документация</a>
+        </div>
+      </section>
+      <section id="features" class="features" aria-label="Возможности проекта">
+        <article class="feature"><span class="number" aria-hidden="true">01</span><h2>Доски и разделы</h2><p>Чтение доступных авторизованному аккаунту досок и разделов с их метаданными.</p></article>
+        <article class="feature"><span class="number" aria-hidden="true">02</span><h2>Пины и медиа</h2><p>Получение пинов, описаний и URL медиа для дальнейших исследований.</p></article>
+        <article class="feature"><span class="number" aria-hidden="true">03</span><h2>Источники и пагинация</h2><p>Оригинальные ссылки на пины и постраничная загрузка коллекций через bookmark.</p></article>
+      </section>
+      <section id="development" class="development" aria-label="Статус разработки">
+        <div><h2 class="eyebrow">Статус разработки</h2><p class="small" id="snapshot-date">Снимок: 2026-10-19</p></div>
+        <p><strong>main:</strong> stdio MVP <span id="version">v0.1.0</span></p>
+        <p><strong>ChatGPT:</strong> <a id="pr-status" href="https://github.com/ParkPavel/Pinterest-research-mcp/pull/1">черновик PR #1</a></p>
+        <p><strong>Pinterest:</strong> проверка ожидается</p>
+      </section>
+      <div class="lower">
+        <section class="section" aria-labelledby="tools-heading">
+          <div class="section-heading"><h2 id="tools-heading">MCP-инструменты</h2><span class="eyebrow" id="tool-count">8 инструментов</span></div>
+          <p class="intro">Только чтение, в пределах разрешений подключённого аккаунта. Доступ ко всему Pinterest и анализ пикселей изображений не реализованы.</p>
+          <dl class="tools" id="tools-list"><!-- tools:start --><div class="tool"><dt>pinterest_account</dt><dd>Информация об авторизованном аккаунте Pinterest.</dd></div>
+<div class="tool"><dt>pinterest_boards</dt><dd>Список доступных досок с пагинацией.</dd></div>
+<div class="tool"><dt>pinterest_board</dt><dd>Метаданные доски по идентификатору.</dd></div>
+<div class="tool"><dt>pinterest_board_pins</dt><dd>Пины доски, ссылки на источники и медиа.</dd></div>
+<div class="tool"><dt>pinterest_pins</dt><dd>Доступные пины аккаунта с пагинацией.</dd></div>
+<div class="tool"><dt>pinterest_pin</dt><dd>Метаданные и медиа одного пина.</dd></div>
+<div class="tool"><dt>pinterest_board_sections</dt><dd>Список разделов доски.</dd></div>
+<div class="tool"><dt>pinterest_section_pins</dt><dd>Пины выбранного раздела доски.</dd></div><!-- tools:end --></dl>
+          <p class="source-note"><a href="https://github.com/ParkPavel/Pinterest-research-mcp/blob/main/src/index.ts">Источник: реестр инструментов в main</a></p>
+        </section>
+        <section id="documentation" class="section" aria-labelledby="docs-heading">
+          <div class="section-heading"><h2 id="docs-heading">Документация и разработка</h2></div>
+          <div class="docs-grid">
+            <div><h3>Начать локально</h3><p>Node.js 20+, учётные данные Pinterest Developer App и разрешённый доступ к API.</p><a href="https://github.com/ParkPavel/Pinterest-research-mcp#getting-started">Установка и настройка</a></div>
+            <div><h3>GitHub CI</h3><p id="ci-status" aria-live="polite">Актуальные результаты — в GitHub Actions.</p><a id="ci-link" href="https://github.com/ParkPavel/Pinterest-research-mcp/actions">Все запуски Actions</a></div>
+            <div><h3>Эксперимент ChatGPT</h3><p>Прототип HTTP и галереи — в отдельном PR. Публичного приложения для установки пока нет; OAuth и тесты с реальным аккаунтом ожидают проверки.</p><a href="https://github.com/ParkPavel/Pinterest-research-mcp/pull/1">Ход разработки в PR #1</a></div>
+            <div><h3>Конфиденциальность</h3><p>Локальное шифрованное хранение OAuth-токенов. Данные, переданные AI-клиенту, обрабатываются по его собственным условиям.</p><a href="./privacy.html">Политика конфиденциальности</a><a href="https://github.com/ParkPavel/Pinterest-research-mcp/blob/main/SECURITY.md">Безопасность проекта</a></div>
+          </div>
+          <p class="source-note" id="freshness" aria-live="polite">Сохранённые сведения из репозитория. Проверяем обновления…</p>
+          <noscript><p class="source-note">JavaScript отключён: показана сохранённая версия. Актуальные сведения доступны по ссылкам на GitHub.</p></noscript>
+        </section>
+        <section class="support" aria-labelledby="support-heading"><div><p class="eyebrow">Независимая разработка</p><h2 id="support-heading">Поддержать проект</h2><p>Помогите развитию интеграции, документации и проверок безопасности. Поддержка добровольна и не расширяет доступ к данным Pinterest.</p></div><a class="button" href="https://web.tribute.tg/d/SwM">Поддержать на Tribute</a></section>
+      </div>
+    </main>
+    <footer><p>© 2026 Pinterest Research MCP · <a href="https://github.com/ParkPavel">Park Pavel</a></p><div><a href="https://github.com/ParkPavel/Pinterest-research-mcp/actions">GitHub CI</a><a href="./privacy.html">Конфиденциальность</a><a href="https://web.tribute.tg/d/SwM">Поддержать на Tribute</a></div><p class="independent">Независимый проект. Не связан с Pinterest и не одобрен Pinterest. Лицензия на программное обеспечение пока не выбрана.</p></footer>
+  </div>
+</body>
+</html>
