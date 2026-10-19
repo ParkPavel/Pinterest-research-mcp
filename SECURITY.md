@@ -1,6 +1,6 @@
 # Security Policy
 
-Pinterest Research MCP handles sensitive OAuth credentials and private account data. Please report vulnerabilities responsibly.
+Visual Research MCP handles sensitive OAuth credentials and private account data. Please report vulnerabilities responsibly.
 
 ## Supported versions
 
