@@ -7,9 +7,9 @@
 | Item | Requirement / project action |
 | --- | --- |
 | Administrator | Business account with verified email; owner accepts Developer Terms in the portal |
-| App name | At least three Latin letters/numbers; cannot contain Pinterest. Brand rules additionally exclude Pin and Pinterest variants. Independent name pending owner choice |
+| App name | At least three Latin letters/numbers; cannot contain Pinterest. Brand rules additionally exclude Pin and Pinterest variants. Independent site identity: Visual Research MCP; registration candidate: Park Pavel Visual Research MCP |
 | Visual identity | Use original branding without Pinterest marks or lookalikes. Actual upload format/size limits must be read from the form |
-| Public presence | App description, website and privacy must describe the same application. Current displayed name needs updating after the independent name is selected |
+| Public presence | App description, website and privacy must describe the same application. Website/privacy identity updated in main by PR #3; API application registration remains pending |
 | Domain | Brand rules restrict the domain name. The current hostname is parkpavel.github.io; the repository URL path is a separate component. Do not claim the source-repository path is expressly forbidden by that rule |
 | Privacy | Publicly accessible, accurate, clearly associated with app/operator; reflect actual processing, local credentials and deletion/revocation |
 | Trial | Describe local validation of authorized-account read access. Standard is a later upgrade requiring Trial and real demonstration evidence |

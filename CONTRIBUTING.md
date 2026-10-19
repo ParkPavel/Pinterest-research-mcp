@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping improve Pinterest Research MCP.
+Thanks for helping improve Visual Research MCP.
 
 ## Scope
 

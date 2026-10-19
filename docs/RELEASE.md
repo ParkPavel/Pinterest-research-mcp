@@ -4,14 +4,14 @@ No submission has been made. No app is approved or listed. Owner approval is nec
 
 | Field | Proposed value / state |
 | --- | --- |
-| Name | Independent name pending; Pinterest Research MCP is invalid for the Pinterest application name. See APPLICATION_CHECKLIST.md |
+| Name | Visual Research MCP; Pinterest registration candidate: Park Pavel Visual Research MCP. Technical repository URL unchanged. |
 | Developer | Park Pavel; publishing identity verification pending |
 | Description | Explore your authorized Pinterest boards and Pins with source links. Visual research in ChatGPT is a planned capability pending platform permission and real integration tests. |
 | Category | Design / productivity candidate; choose from actual portal options |
 | Website | https://parkpavel.github.io/Pinterest-research-mcp/ |
 | Privacy | https://parkpavel.github.io/Pinterest-research-mcp/privacy.html — local-prototype policy, must be updated for deployed facts |
 | Contact | Public GitHub issue tracker for non-sensitive contact only; private support/privacy contact needs owner selection |
-| Icon / listing images | Not prepared as release assets; owner must confirm naming/design requirements before final artwork |
+| Icon / listing images | Prepared: docs/assets/icon-512.png, icon-1024.png and social-card.png; see BRAND.md. Developer portal upload and ChatGPT listing validation remain pending. |
 | MCP endpoint | Not deployed; exact HTTPS URL pending |
 | OAuth | External provider not configured; client recognition, redirect, audience and scopes pending |
 | Tools | `pinterest_account`, `pinterest_boards`, `pinterest_board`, `pinterest_board_pins`, `pinterest_pins`, `pinterest_pin`, `pinterest_board_sections`, `pinterest_section_pins` |

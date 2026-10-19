@@ -1,9 +1,9 @@
 <div align="center">
 
-![Pinterest Research MCP — visual research banner](assets/github-banner.svg)
+![Visual Research MCP — visual research banner](assets/github-banner.png)
 
 
-# Pinterest Research MCP
+# Visual Research MCP
 
 **An independent, read-only Pinterest connector for MCP clients and visual research workflows.**
 
@@ -22,7 +22,7 @@ Access your authorized Pinterest boards, pins, collections and source media meta
 
 ## The idea
 
-Visual research should be grounded in **actual source material**, not invented descriptions. Pinterest Research MCP aims to connect your own authorized Pinterest content to compatible AI tools, preserving each item's source link so you can investigate references, build moodboards and eventually derive evidence-backed brand-design patterns.
+Visual research should be grounded in **actual source material**, not invented descriptions. Visual Research MCP aims to connect your own authorized Pinterest content to compatible AI tools, preserving each item's source link so you can investigate references, build moodboards and eventually derive evidence-backed brand-design patterns.
 
 **Project status:** early-stage implementation, not a hosted service or verified ChatGPT installation. The default `main` branch contains a local `stdio` MVP; the HTTP + gallery + external OAuth validation work is in [the open draft PR #1](https://github.com/ParkPavel/Pinterest-research-mcp/pull/1). Pinterest developer API approval and real-account tests are still pending.
 
@@ -42,7 +42,7 @@ Visual research should be grounded in **actual source material**, not invented d
 
 ```mermaid
 flowchart LR
-  A["MCP client"] --> B["Pinterest Research MCP"]
+  A["MCP client"] --> B["Visual Research MCP"]
   B --> C["Pinterest OAuth 2.0"]
   B --> D["Pinterest API v5"]
   D --> E["Boards, Pins, metadata & media URLs"]
@@ -133,13 +133,17 @@ Independent development takes time: API integrations, visual analysis, documenta
 
 <div align="center">
 
-### [♥ Support Pinterest Research MCP on Tribute](https://web.tribute.tg/d/SwM)
+### [♥ Support Visual Research MCP on Tribute](https://web.tribute.tg/d/SwM)
 
 [![Tribute support](https://img.shields.io/badge/Tribute-Support%20development-C96B51?style=for-the-badge)](https://web.tribute.tg/d/SwM)
 
 </div>
 
 Support is optional and does not grant additional access to Pinterest data or API permissions.
+
+## Visual identity
+
+The independent project mark is used across the website, README, browser icons and sharing previews. [Download the application icon](docs/assets/icon-512.png) or see [all brand assets and verified requirements](docs/BRAND.md).
 
 ## Project information
 

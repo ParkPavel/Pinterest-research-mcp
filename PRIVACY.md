@@ -1,13 +1,13 @@
-# Privacy Policy — Pinterest Research MCP
+# Privacy Policy — Visual Research MCP
 
 **Effective date:** October 19, 2026
 
-**Operator:** Park Pavel (independent developer)  
-**Project:** [Pinterest Research MCP](https://github.com/ParkPavel/Pinterest-research-mcp)  
+**Operator:** Park Pavel (independent developer)
+**Project:** [Visual Research MCP](https://github.com/ParkPavel/Pinterest-research-mcp)
 **Contact:** [Project issue tracker](https://github.com/ParkPavel/Pinterest-research-mcp/issues). Please do not post private information, tokens, or account details in public issues; request a private contact channel first.
 
 ## 1. What the application does
-Pinterest Research MCP is an experimental, read-only tool for authorized Pinterest account research and visual analysis through compatible AI assistants. It may retrieve information about the connected account and accessible boards, board sections, Pins, descriptions, source links, and media URLs within Pinterest API permissions.
+Visual Research MCP is an experimental, read-only tool for authorized Pinterest account research and visual analysis through compatible AI assistants. It may retrieve information about the connected account and accessible boards, board sections, Pins, descriptions, source links, and media URLs within Pinterest API permissions.
 
 **Current status:** The software is in development. Its local prototype is not yet a publicly hosted multi-user service. Capabilities below describe intended processing when an account is connected and the tool is used.
 
@@ -39,4 +39,4 @@ You control authorization and may revoke Pinterest access at any time. You may r
 This policy will be updated when the software moves beyond its current local single-user prototype, especially before multi-user hosting or any new persistent storage, and the effective date will be changed.
 
 ## 9. Independent app notice
-Pinterest Research MCP is an independent developer project and is not affiliated with or endorsed by Pinterest.
+Visual Research MCP is an independent developer project and is not affiliated with or endorsed by Pinterest.
