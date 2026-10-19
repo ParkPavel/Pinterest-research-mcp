@@ -11,7 +11,7 @@ We are building a privacy-conscious, read-only MCP integration for accessible Pi
 1. Read [README](README.md), [Privacy Policy](PRIVACY.md), and [Security Policy](SECURITY.md).
 2. Open an issue describing the proposed change (unless it is a small documentation fix).
 3. Fork the repository or work in a feature branch; do not commit account tokens or customer data.
-4. Use Node.js 20+ and run `npm install`, `npm run check`, and `npm run build`.
+4. Use Node.js 20+ and run `npm ci`, `npm run check`, `npm run build`, `npm test`, and `npm run test:site`.
 5. Describe the behavior, manual testing, limitations and permissions in your pull request.
 
 Avoid introducing write/publish scopes, scraping or login bypasses without a separate review. Never include real Pinterest account data in tests or screenshots without consent.
