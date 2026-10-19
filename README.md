@@ -1,5 +1,8 @@
 <div align="center">
 
+![Pinterest Research MCP — visual research banner](assets/github-banner.svg)
+
+
 # Pinterest Research MCP
 
 **An independent, read-only Pinterest connector for MCP clients and visual research workflows.**
