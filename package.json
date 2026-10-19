@@ -1,6 +1,6 @@
 {
   "name": "pinterest-research-mcp",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -15,7 +15,8 @@
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
     "zod": "^3.25.0",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "jose": "^6.1.0"
   },
   "devDependencies": {
     "typescript": "^5.6.0",
