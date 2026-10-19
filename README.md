@@ -1,45 +1,41 @@
-# Pinterest Research MCP · v0.1.0
+# Pinterest Research MCP v0.2 preview
 
-Local-first read-only Pinterest MCP server. OAuth 2.0, Pinterest API v5, encrypted local tokens, board/Pin metadata and source image URLs. No scraped content or invented image analysis.
+A read-only local-first Pinterest connector using Pinterest API v5, a TypeScript MCP server and an MCP Apps pin gallery resource.
 
-## Requirements
-- Node.js 20+, npm
-- Pinterest developer application with approved API access and OAuth scopes: https://developers.pinterest.com/
+**Status:** code preview, not yet a deployed/installed ChatGPT App. Read [ChatGPT integration and security limitations](docs/CHATGPT_APP.md).
 
-## Install and authorize
-```bash
+## Setup
+
+Requires Node 20+ and a Pinterest developer application approved for the requested permissions.
+
+```sh
 npm install
 cp .env.example .env
 openssl rand -hex 32
 ```
-Fill in PINTEREST_APP_ID, PINTEREST_APP_SECRET and TOKEN_ENCRYPTION_KEY in .env. Register exact callback http://127.0.0.1:8765/callback if Pinterest accepts loopback redirects (otherwise adapt callback implementation to approved HTTPS URL).
 
-```bash
+Set PINTEREST_APP_ID, PINTEREST_APP_SECRET, TOKEN_ENCRYPTION_KEY in your private .env; configure your Pinterest app's matching OAuth redirect. Do not commit secrets or tokens.
+
+```sh
 npm run auth
 npm run check
 npm run build
-npm start
+npm start         # local stdio MCP
+npm run start:http # read-only HTTP MCP, loopback by default
 ```
 
-The MCP transport is local stdio; configure a compatible MCP client or Inspector to run the compiled entrypoint from the repository working directory.
+For HTTP MCP set MCP_SERVER_TOKEN in .env to a random 32+ character value, and use header `Authorization: Bearer <value>` in an MCP Inspector client. HTTP endpoint: http://127.0.0.1:8787/mcp. Health check: /healthz.
 
-## Tools
-- pinterest_account
-- pinterest_boards
-- pinterest_board
-- pinterest_board_pins
-- pinterest_pins
-- pinterest_pin
-- pinterest_board_sections
-- pinterest_section_pins
+## Available tools
 
-Board pagination uses page_size and bookmark. Actual available data depends on the application's approval and OAuth scopes.
-
-## Security
-Local OAuth tokens are AES-256-GCM encrypted in .data/tokens.enc. Never commit .env, tokens or browser cookies. OAuth callback validates state. API calls are read-only.
+`pinterest_account`, `pinterest_boards`, `pinterest_board`, `pinterest_board_pins`, `pinterest_pins`, `pinterest_pin`, `pinterest_board_sections`, `pinterest_section_pins`. The board-pin and section-pin tools expose source links and media URLs with a gallery UI resource.
 
 ## Limitations
-MVP exposes authorized Pin media URLs and metadata, *not decoded image pixel data or automated multimodal analysis*. No remote Streamable HTTP ChatGPT app, gallery UI, browser adapter or search index is included. Authorization with Pinterest does not grant universal access to other users' or private content.
 
-## Status
-Source release; dependencies and real Pinterest OAuth flow have not yet been verified end-to-end.
+- The HTTP prototype authorizes **one** Pinterest account through one shared bearer token; it is **not** yet a production-compatible multi-user ChatGPT OAuth provider.
+- Do not expose it publicly before implementing end-user authorization and isolation.
+- Image URLs are returned but this server does not itself decode images or perform visual-model inference.
+- Pinterest API approval and available scopes control what can be read; no bypassing privacy or access restrictions.
+- OAuth flow and runtime have not yet been tested end-to-end with real Pinterest credentials.
+
+Developer documentation: https://developers.openai.com/plugins/ and https://developers.pinterest.com/docs/api/v5/
