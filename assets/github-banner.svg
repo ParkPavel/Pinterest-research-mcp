@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="t d">
+<title id="t">Pinterest Research MCP</title><desc id="d">Abstract moodboard, magnifying glass and research wordmark</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F9F5EE"/><stop offset="1" stop-color="#EEE5D7"/></linearGradient><linearGradient id="tile" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#D1B39B"/><stop offset="1" stop-color="#BA684B"/></linearGradient></defs>
+<rect width="1200" height="330" rx="28" fill="url(#bg)"/>
+<g transform="translate(70 47)">
+<rect width="104" height="104" rx="18" fill="#C17755"/><path d="M0 84Q32 34 104 24V104H0Z" fill="#DEA88A"/>
+<rect x="118" width="104" height="104" rx="18" fill="#B9CBCA"/><path d="M118 68Q160 24 222 60V104H118Z" fill="#749C9B"/>
+<rect y="118" width="104" height="104" rx="18" fill="#708C68"/><path d="M0 204Q54 116 104 134V222H0Z" fill="#425C42"/>
+<rect x="118" y="118" width="104" height="104" rx="18" fill="#DFC5A2"/><path d="M118 182Q180 134 222 154V222H118Z" fill="#B58C71"/>
+<circle cx="186" cy="156" r="79" fill="#F7F0E5" stroke="#454D43" stroke-width="11"/>
+<path d="M241 215l35 36" stroke="#454D43" stroke-width="17" stroke-linecap="round"/>
+<path d="M185 121L198 151L228 164L198 177L185 207L172 177L142 164L172 151Z" fill="#C16C4E"/>
+</g>
+<text x="426" y="142" fill="#26382F" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700" letter-spacing="-2">Visual research.</text>
+<text x="429" y="197" fill="#3B554A" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="600">Pinterest Research MCP</text>
+<text x="430" y="240" fill="#717971" font-family="Arial, Helvetica, sans-serif" font-size="22">Read-only · Source-grounded · AI-ready</text>
+</svg>
