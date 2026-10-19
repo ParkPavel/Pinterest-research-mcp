@@ -25,6 +25,7 @@ A checkbox requires evidence, not source-code presence or a green compile.
 
 ## Non-negotiable release gates
 
+- [ ] Compliant independent application name/visual identity selected and reflected on website/privacy; authenticated registration fields checked (docs/APPLICATION_CHECKLIST.md).
 - [ ] Pinterest API tier and content permissions verified in the dashboard.
 - [ ] Pinterest confirms proposed third-party AI processing/storage is allowed, or product scope is changed accordingly.
 - [ ] Login, denial, refresh rotation, reconnect and grant revocation proven with real accounts.

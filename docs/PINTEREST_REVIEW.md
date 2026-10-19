@@ -1,5 +1,7 @@
 # Pinterest access review packet — draft, not submitted
 
+**Correction:** The previous proposed app name is invalid. Use the [verified registration checklist](APPLICATION_CHECKLIST.md) before copying any fields. Final independent branding is pending; the existing repository name is only a technical reference. The owner reports appeal is unavailable and requests a new application; the reconsideration message below is retained as historical draft material, not the current submission route.
+
 Date: 2026-10-19. Operator: **Park Pavel**. Owner reports a Trial denial with no explanation. Dashboard status and app registration date still need owner verification. Do not claim approval or resubmit under a different identity to evade review.
 
 ## Public references
@@ -15,7 +17,7 @@ Official basis: [access tiers and appeals](https://developers.pinterest.com/docs
 
 ## English use case
 
-Pinterest Research MCP is an independent read-only integration developed by Park Pavel. The proposed service helps an authenticated user navigate boards, sections and Pins available through their own Pinterest authorization, retain links to original Pins, and explore a selected collection of visual references. It does not publish, edit, follow, scrape, collect passwords or cookies, provide unrestricted search, or bypass privacy and account-access restrictions.
+The application is an independent read-only integration developed by Park Pavel. Its compliant independent display name is pending selection. The proposed service helps an authenticated user navigate boards, sections and Pins available through their own Pinterest authorization, retain links to original Pins, and explore a selected collection of visual references. It does not publish, edit, follow, scrape, collect passwords or cookies, provide unrestricted search, or bypass privacy and account-access restrictions.
 
 The current implementation is a local MCP prototype. A multi-user hosted service, real-account tests and ChatGPT gallery verification are not complete. We propose user-requested visual analysis in ChatGPT, subject to Pinterest's confirmation that this processing and its data handling are permitted. We will not activate that processing or retain Pinterest content outside the approved scope.
 
@@ -58,7 +60,7 @@ Should I wait for your review, update the existing application or submit a new r
 Thank you,
 Park Pavel
 
-Do not paste secrets into this message. The owner supplies the app ID and denial date only in the private support form. This draft has **not** been sent. Wait for support instructions before a duplicate Trial request. Standard application remains ineligible until Trial is confirmed and an upgrade option is available.
+Do not paste secrets into this message. The owner supplies the app ID and denial date only in the private support form. This draft has **not** been sent. For the owner-requested new application, verify the actual registration route and disclose the previous denial; no blanket permission to register duplicates has been established. Standard application remains ineligible until Trial is confirmed and an upgrade option is available.
 
 ## Future Standard-access demonstration (real data only)
 

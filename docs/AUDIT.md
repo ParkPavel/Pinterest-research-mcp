@@ -12,6 +12,10 @@ GitHub evidence at inspection:
 - [Main Pages deployment: success](https://github.com/ParkPavel/Pinterest-research-mcp/actions/runs/39272742951).
 - [PR #1 prototype CI: success](https://github.com/ParkPavel/Pinterest-research-mcp/actions/runs/39250209662), typecheck/build only. This does not prove auth or gallery interoperability.
 
+## Registration correction added after owner feedback
+
+The earlier review missed the explicit registration-name restriction and the independent-brand rules. The proposed application name Pinterest Research MCP is invalid. Registration requires at least three Latin letters/numbers; brand guidance also excludes Pin and Pinterest variants from names/domains and Pinterest marks from app branding. Existing public display names need alignment after an independent name is selected. The authenticated form and its upload/length limits remain unverified. See [corrected checklist](APPLICATION_CHECKLIST.md). This finding does not establish the reason for the prior denial.
+
 ## Confirmed defects / release blockers
 
 | Priority | Evidence in audited source | Impact | Disposition in this change |

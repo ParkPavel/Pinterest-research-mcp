@@ -4,7 +4,7 @@ No submission has been made. No app is approved or listed. Owner approval is nec
 
 | Field | Proposed value / state |
 | --- | --- |
-| Name | Pinterest Research MCP — working title, platform trademark/naming review pending |
+| Name | Independent name pending; Pinterest Research MCP is invalid for the Pinterest application name. See APPLICATION_CHECKLIST.md |
 | Developer | Park Pavel; publishing identity verification pending |
 | Description | Explore your authorized Pinterest boards and Pins with source links. Visual research in ChatGPT is a planned capability pending platform permission and real integration tests. |
 | Category | Design / productivity candidate; choose from actual portal options |
