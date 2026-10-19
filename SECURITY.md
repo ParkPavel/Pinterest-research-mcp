@@ -21,3 +21,9 @@ When reporting privately, share: affected version, reproduction steps, impact, a
 - Request minimum read-only permissions; periodically rotate keys and revoke unused OAuth grants.
 - Avoid logging bearer tokens, authorization codes, Pins from private collections, and personally identifiable information.
 - Do not use the proof-of-concept bearer-token HTTP mode for multi-user production installations.
+
+## Security-foundation limits
+
+The local callback is single-use and expires after five minutes. API and OAuth errors use fixed public messages; do not add upstream response bodies to logs. Tokens use atomic encrypted writes. Refresh/reconnect/disconnect are serialized per subject within one process; the filesystem adapter is not a distributed database and must live under a trusted private OS account.
+
+Raw-token and custom-scope environment overrides are not supported. No public HTTP service is included in this security-foundation branch. The draft PR #1 HTTP implementation uses shared Pinterest credentials and must remain undeployed until verified identity mapping, distributed rotation, provider configuration and end-to-end tests pass. See [audit](docs/AUDIT.md) and [release gates](ROADMAP.md).

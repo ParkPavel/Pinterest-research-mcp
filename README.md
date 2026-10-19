@@ -58,7 +58,7 @@ The connector requests read-only data available under the **authorized account's
 ```bash
 git clone https://github.com/ParkPavel/Pinterest-research-mcp.git
 cd Pinterest-research-mcp
-npm install
+npm ci
 cp .env.example .env
 openssl rand -hex 32
 ```
@@ -69,6 +69,7 @@ Add `PINTEREST_APP_ID`, `PINTEREST_APP_SECRET`, and `TOKEN_ENCRYPTION_KEY` to **
 npm run auth
 npm run check
 npm run build
+npm test
 npm start
 ```
 
@@ -104,6 +105,14 @@ It is **not installable in ChatGPT yet**: a secure public HTTPS deployment, end-
 - Personal content shared with an external AI service is subject to that service's separate privacy terms.
 
 See [Privacy Policy](PRIVACY.md), [Security Policy](SECURITY.md) and [Contributing Guide](CONTRIBUTING.md).
+
+## Production development
+
+The security-foundation work hardens the local flow; it does not make the HTTP prototype a production service. `npm run logout` deletes the local token copy; separately revoke the app in Pinterest account settings. Scopes are fixed to `boards:read,pins:read,user_accounts:read`; raw-token environment overrides are unsupported. Run one local process per credential directory.
+
+[Audit](docs/AUDIT.md) · [Acceptance roadmap](ROADMAP.md) · [Changelog](CHANGELOG.md) · [OAuth](docs/OAUTH.md) · [Architecture](docs/ARCHITECTURE.md) · [Operator guide](docs/OPERATIONS.md) · [Test ledger](docs/TESTING.md) · [Pinterest review draft](docs/PINTEREST_REVIEW.md) · [Release packet](docs/RELEASE.md) · [Owner actions](docs/OWNER_ACTIONS.md)
+
+Pinterest permission for proposed third-party AI processing/storage remains unresolved. No live API approval, multi-user deployment, pixel-level analysis or ChatGPT publication is claimed.
 
 ## Roadmap
 
