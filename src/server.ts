@@ -22,7 +22,6 @@ export function createPinterestServer() {
   function reg(name:string,title:string,description:string,schema:any,fn:(a:any)=>Promise<unknown>,withGallery=false){
     server.registerTool(name,{
       title,description,inputSchema:schema,annotations:{readOnlyHint:true,destructiveHint:false,openWorldHint:false},
-      securitySchemes:[{type:'oauth2',scopes:['pinterest.read']}],
       ...(withGallery?{_meta:{ui:{resourceUri:galleryUri}}}:{})
     },async(args:any)=>{try{return success(await fn(args))}catch(e){return failure(e)}});
   }
